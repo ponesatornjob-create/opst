@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ยินดีต้อนรับสู่การเรียนรู้จริยธรรมและเทคโนโลยี</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', Arial, sans-serif;
+      background: linear-gradient(to bottom right, #a0e9ff, #fbc2eb);
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      background: white;
+      border: 5px solid #ff69b4;
+      border-radius: 25px;
+      padding: 30px;
+      max-width: 700px;
+      margin: 40px auto;
+      box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+      animation: fadeIn 1s ease-in-out;
+    }
+    h1 {
+      color: #ff4081;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+      animation: bounce 2s infinite;
+    }
+    p {
+      font-size: 1.3em;
+      color: #333;
+      margin-bottom: 30px;
+    }
+    .button {
+      display: inline-block;
+      padding: 15px 30px;
+      margin: 10px;
+      background-color: #4caf50;
+      color: white;
+      text-decoration: none;
+      border-radius: 20px;
+      font-size: 1.2em;
+      box-shadow: 0 5px 0 #388e3c;
+      transition: transform 0.2s, background-color 0.3s, box-shadow 0.2s;
+    }
+    .button:hover {
+      background-color: #45a049;
+      transform: scale(1.1);
+    }
+    .button:active {
+      transform: scale(0.95);
+      box-shadow: 0 2px 0 #2e7d32;
+    }
+    .game-button {
+      background-color: #ff69b4;
+      box-shadow: 0 5px 0 #c2185b;
+    }
+    .game-button:hover {
+      background-color: #f06292;
+    }
+    .test-button {
+      background-color: #ffa500;
+      box-shadow: 0 5px 0 #e65100;
+    }
+    .test-button:hover {
+      background-color: #ff9800;
+    }
+
+    /* อนิเมชันเด้ง */
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-20px);
+      }
+      60% {
+        transform: translateY(-10px);
+      }
+    }
+
+    /* อนิเมชันจางเข้า */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎉 ยินดีต้อนรับสู่การเรียนรู้จริยธรรมและเทคโนโลยี 🎉</h1>
+    <p>มาเรียนรู้วิธีใช้เทคโนโลยีอย่างปลอดภัยและมีจริยธรรมกันเถอะ!</p>
+    <a href="lessons.html" class="button">📘 เริ่มเรียน</a>
+    <a href="games.html" class="button game-button">🎮 เล่นเกม</a>
+    <a href="tests.html" class="button test-button">📝 ทำแบบทดสอบ</a>
+  </div>
+</body>
+</html>

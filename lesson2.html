@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>บทเรียน: เทคโนโลยีที่ปลอดภัย</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', Arial, sans-serif;
+      background: linear-gradient(to bottom right, #a0e9ff, #fbc2eb);
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      color: #ff4081;
+      font-size: 2.6em;
+      text-shadow: 2px 2px #ffd700;
+    }
+    h2 {
+      color: #4682b4;
+      font-size: 1.8em;
+      margin-top: 25px;
+    }
+    .container {
+      max-width: 850px;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 25px;
+      border: 5px solid #ffb6c1;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+      text-align: left;
+      animation: fadeIn 1s ease-in-out;
+    }
+    p {
+      font-size: 1.2em;
+      color: #333;
+    }
+    .button {
+      display: inline-block;
+      padding: 15px 30px;
+      margin: 15px;
+      background-color: #32cd32;
+      color: white;
+      text-decoration: none;
+      border-radius: 15px;
+      font-size: 1.2em;
+      transition: transform 0.2s, background-color 0.3s;
+      box-shadow: 0 5px 0 #228b22;
+    }
+    .button:hover {
+      background-color: #45a049;
+      transform: scale(1.1);
+    }
+    .button:active {
+      transform: scale(0.95);
+      box-shadow: 0 2px 0 #1c5e1c;
+    }
+    .back-button {
+      background-color: #4682b4;
+      box-shadow: 0 5px 0 #2f4f4f;
+    }
+    .back-button:hover {
+      background-color: #5a9bd4;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      margin: 18px 0;
+      font-size: 1.1em;
+    }
+    img.highlight {
+  width: 100%;       /* ขยายเต็มความกว้างของ container */
+  height: auto;      /* ให้ความสูงปรับตามอัตราส่วน */
+  object-fit: cover; /* ให้รูปไม่บิด */
+  display: block;
+  margin: 10px 0;    /* เว้นระยะบนล่าง */
+  cursor: pointer;
+  border-radius: 10px;
+  border: 3px solid #ff69b4;
+  transition: transform 0.3s;
+}
+
+    
+    img.highlight:hover {
+      transform: scale(1.1);
+    }
+    .fullscreen-overlay {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.9);
+      z-index: 1000;
+      justify-content: center;
+      align-items: center;
+    }
+    .fullscreen-overlay img {
+      max-width: 90%;
+      max-height: 90%;
+    }
+    .fullscreen-overlay .close-button {
+      position: absolute;
+      top: 20px; right: 20px;
+      color: white;
+      font-size: 2em;
+      cursor: pointer;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🔒 บทเรียน: เทคโนโลยีที่ปลอดภัย</h1>
+
+    <h2>1. การใช้เทคโนโลยีสารสนเทศอย่างเหมาะสมและปลอดภัย</h2>
+    <p>การใช้เทคโนโลยีอย่างมีมารยาทและระมัดระวังจะช่วยให้เราอยู่ในโลกดิจิทัลได้อย่างปลอดภัย</p>
+    <ul>
+      <li>✨ ไม่แชร์ข้อมูลส่วนตัว เช่น ชื่อ ที่อยู่ หรือรหัสผ่าน<br>
+        <img src="20.png" alt="รักษาข้อมูลส่วนตัวให้ปลอดภัย" class="highlight" onclick="showFullscreen(this.src, this.alt)">
+      </li>
+      <li>🚫 หลีกเลี่ยงการคลิกลิงก์ที่ไม่น่าเชื่อถือ<br>
+        <img src="17.jpg" alt="อย่าคลิกลิงก์ที่น่าสงสัย" class="highlight" onclick="showFullscreen(this.src, this.alt)">
+      </li>
+    </ul>
+
+    <h2>2. อันตรายที่แอบแฝงมากับการใช้เทคโนโลยี</h2>
+    <p>ถ้าไม่ระมัดระวัง อาจเกิดอันตราย เช่น การถูกหลอก หรือเสพข้อมูลที่ไม่ดี</p>
+    <ul>
+      <li>📚 เลือกข้อมูลที่น่าเชื่อถือ</li>
+      <li>👤 ระวังคนแปลกหน้าออนไลน์</li>
+      <li>⚠️ คิดก่อนแชร์ข้อมูล</li>
+       <li>ได้รับสารสนเทศจำนวนมาก ซึ่งมีทั้งข้อมูลดีและไม่ดี ส่งตรงถึงตัวเรา<br><img src="2.png" alt="เลือกข้อมูลที่น่าเชื่อถือ" class="highlight" onclick="showFullscreen(this.src, this.alt)"></li> 
+       <li>คนแปลกหน้าหรือผู้ไม่ประสงค์ดีอาจใช้เทคโนโลยีหลอกลวงหรือหาเหยื่อ<br><img src="3.png" alt="ระวังคนแปลกหน้าออนไลน์" class="highlight" onclick="showFullscreen(this.src, this.alt)"></li> 
+       <li>สังคมออนไลน์อาจชักจูงให้คล้อยตามค่านิยมที่ไม่ดีหรือความเชื่อผิด ๆ<br><img src="1.png" alt="คิดก่อนคล้อยตามกระแส" class="highlight" onclick="showFullscreen(this.src, this.alt)"></li> 
+       <li>เทคโนโลยีที่ใช้งานง่ายและราคาถูก อาจนำไปสู่การกระทำผิดกฎหมายหรือศีลธรรม<br><img src="18.png" alt="ใช้เทคโนโลยีอย่างมีจริยธรรม" class="highlight" onclick="showFullscreen(this.src, this.alt)"></li> 
+       <li>ใช้เวลากับเกมออนไลน์มากเกินไป อาจเสียสุขภาพและโอกาสการเรียนรู้<br><img src="21.jpg" alt="เล่นเกมอย่างมีขอบเขต" class="highlight" onclick="showFullscreen(this.src, this.alt)"></li> 
+       <li>การแชร์ข้อมูลที่ไม่ถูกต้องอาจก่อความเสียหายและผิดกฎหมายคอมพิวเตอร์<br><img src="19.png" alt="ตรวจสอบก่อนแชร์ข้อมูล" class="highlight" onclick="showFullscreen(this.src, this.alt)"></li> 
+    </ul>
+
+    <div style="text-align:center; margin-top: 25px;">
+      <a href="lessons.html" class="button back-button">⬅️ กลับหน้าเลือกบทเรียน</a>
+    </div>
+  </div>
+
+  <div id="fullscreenOverlay" class="fullscreen-overlay">
+    <span class="close-button" onclick="closeFullscreen()">✕</span>
+    <img id="fullscreenImage" src="" alt="">
+  </div>
+
+  <script>
+    function showFullscreen(src, alt) {
+      const overlay = document.getElementById('fullscreenOverlay');
+      const img = document.getElementById('fullscreenImage');
+      img.src = src;
+      img.alt = alt;
+      overlay.style.display = 'flex';
+    }
+    function closeFullscreen() {
+      document.getElementById('fullscreenOverlay').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
